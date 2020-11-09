@@ -1,0 +1,13 @@
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-offset-2">
+            @foreach($post->comments as $comment)
+            <div class="comment">
+                <p>Name: {{$comment->name}}</p>
+                <p>Comment:<br/>{{$comment->comment}}</p>
+            </div>
+
+            $endforeach
+            </div>
+        </div>
+    </div>
